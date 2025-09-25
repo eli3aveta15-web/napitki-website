@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Лимонады — НАПИТКИ ДОМА</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="global-nav">
+    <div class="container">
+      <div class="nav-list">
+        <a href="index.html">Главная</a>
+        <a href="recipes.html" class="active">Рецепты</a>
+        <a href="tips.html">Советы</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <header class="page-header">
+      <h1>Лимонады</h1>
+      <p>Освежающие, натуральные, без консервантов</p>
+    </header>
+
+    <!-- ФИЛЬТРЫ ПО ВРЕМЕНИ -->
+    <div class="filters">
+      <button class="filter-btn filter-time active" data-filter="all">Все</button>
+      <button class="filter-btn filter-time" data-filter="0-15">до 15 мин</button>
+      <button class="filter-btn filter-time" data-filter="15-30">15–30 мин</button>
+      <button class="filter-btn filter-time" data-filter="30-60">30–60 мин</button>
+      <button class="filter-btn filter-time" data-filter="60+">>60 мин</button>
+    </div>
+
+    <div class="recipe-grid">
+      <!-- 1 -->
+      <div class="recipe-card" data-time="0-15" data-ingredients="citrus">
+        <img src="https://avatars.mds.yandex.net/i?id=2f254074682e4a29aebb5cfed272f069-4936408-images-thumbs&n=13" alt="Классический лимонад">
+        <div class="recipe-card-content">
+          <h3>Классический лимонад</h3>
+          <p class="recipe-time">⏱️ 10 минут</p>
+          <p class="recipe-ingredients">🍋 Лимон, Сахар, Вода, Мята</p>
+       <a href="recipes/lemonades/classic-lemonade.html" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="recipe-card" data-time="0-15" data-ingredients="berries">
+        <img src="https://avatars.mds.yandex.net/i?id=66f697c34b7dab0e7eb1569554a95826_l-10964795-images-thumbs&n=13" alt="Малиновый лимонад">
+        <div class="recipe-card-content">
+          <h3>Малиновый лимонад</h3>
+          <p class="recipe-time">⏱️ 12 минут</p>
+          <p class="recipe-ingredients">🍓 Малина, Лимон, Сахар, Сода</p>
+          <a href="recipes/lemonades/raspberry-lemonade.html" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="recipe-card" data-time="15-30" data-ingredients="fruits">
+        <img src="https://avatars.mds.yandex.net/i?id=380e213398eb598bbaa51ae4135e3c62_l-4575945-images-thumbs&n=13" alt="Апельсиново-имбирный">
+        <div class="recipe-card-content">
+          <h3>Апельсиново-имбирный</h3>
+          <p class="recipe-time">⏱️ 20 минут</p>
+          <p class="recipe-ingredients">🍊 Апельсин, Имбирь, Мёд, Лайм</p>
+          <a href="recipes/lemonades/orange-ginger-lemonade.html" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="recipe-card" data-time="0-15" data-ingredients="herbs">
+        <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_669e9425ba5e8b1a4636d80f_669e969fa2bd4a2615b426d5/scale_1200" alt="Лимонад с базиликом">
+        <div class="recipe-card-content">
+          <h3>Лимонад с базиликом</h3>
+          <p class="recipe-time">⏱️ 8 минут</p>
+          <p class="recipe-ingredients">🍋 Лимон, Базилик, Сахар, Вода</p>
+          <a href="recipes/lemonades/basil-lemonade.html" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="recipe-card" data-time="30-60" data-ingredients="fruits">
+        <img src="https://avatars.mds.yandex.net/i?id=44a2a0f198e2d56b2708fa1c68cdcae8_l-5194765-images-thumbs&n=13" alt="Арбузный лимонад">
+        <div class="recipe-card-content">
+          <h3>Арбузный лимонад</h3>
+          <p class="recipe-time">⏱️ 40 минут</p>
+          <p class="recipe-ingredients">🍉 Арбуз, Лайм, Мята, Лёд</p>
+          <a href="recipes/lemonades/watermelon-lemonade.html" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="recipe-card" data-time="0-15" data-ingredients="citrus">
+        <img src="https://avatars.mds.yandex.net/i?id=af845888e1429258b84f9d3a590437a2_l-5236117-images-thumbs&n=13" alt="Грейпфрутовый лимонад">
+        <div class="recipe-card-content">
+          <h3>Грейпфрутовый лимонад</h3>
+          <p class="recipe-time">⏱️ 10 минут</p>
+          <p class="recipe-ingredients">🫐 Грейпфрут, Лимон, Сироп, Сода</p>
+          <a href="recipes/lemonades/grapefruit-lemonade.html" class="btn">Подробнее</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      НАПИТКИ ДОМА — Сделано с ❤️ для любителей вкусных напитков
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

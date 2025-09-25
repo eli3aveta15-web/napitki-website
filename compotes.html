@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Компоты — НАПИТКИ ДОМА</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ГЛОБАЛЬНОЕ МЕНЮ -->
+  <nav class="global-nav">
+    <div class="container">
+      <div class="nav-list">
+        <a href="index.html">Главная</a>
+        <a href="recipes.html" class="active">Рецепты</a>
+        <a href="tips.html">Советы</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <header class="page-header">
+      <h1>Компоты</h1>
+      <p>Выберите время приготовления и ингредиенты</p>
+    </header>
+
+    <!-- ФИЛЬТРЫ -->
+    <div class="filters">
+      <button class="filter-btn filter-time active" data-filter="all">Все</button>
+      <button class="filter-btn filter-time" data-filter="0-15">до 15 мин</button>
+      <button class="filter-btn filter-time" data-filter="15-30">15–30 мин</button>
+      <button class="filter-btn filter-time" data-filter="30-60">30–60 мин</button>
+      <button class="filter-btn filter-time" data-filter="60+">>60 мин</button>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn filter-ingredient active" data-filter="all">Все ингредиенты</button>
+      <button class="filter-btn filter-ingredient" data-filter="fruits">Фрукты</button>
+      <button class="filter-btn filter-ingredient" data-filter="berries">Ягоды</button>
+      <button class="filter-btn filter-ingredient" data-filter="plums">Слива</button>
+      <button class="filter-btn filter-ingredient" data-filter="apples">Яблоки</button>
+      <button class="filter-btn filter-ingredient" data-filter="pears">Груши</button>
+    </div>
+
+    <!-- РЕЦЕПТЫ -->
+    <div class="recipe-grid">
+      <!-- 1 -->
+      <div class="recipe-card" data-time="15-30" data-ingredients="apples fruits">
+        <img src="https://img.povar.ru/mobile/7a/3f/af/d8/kompot_na_zimu_iz_yablok_i_grush-596193.JPG" alt="Компот из яблок и груш">
+        <div class="recipe-card-content">
+          <h3>Компот из яблок и груш</h3>
+          <p class="recipe-time">⏱️ 25 минут</p>
+          <p class="recipe-ingredients">🍎 Яблоки, Груши, Сахар, Вода</p>
+          <a href="recipes/compotes/apple-pear-compote.html" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="recipe-card" data-time="0-15" data-ingredients="berries">
+        <img src="https://lefood.menu/wp-content/uploads/w_images/2023/04/recept-62649-scaled-1240x826.jpg" alt="Компот из смородины">
+        <div class="recipe-card-content">
+          <h3>Компот из черной смородины</h3>
+          <p class="recipe-time">⏱️ 10 минут</p>
+          <p class="recipe-ingredients">🍇 Смородина, Сахар, Вода</p>
+        <a href="recipes/compotes/black-currant-compote.html" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="recipe-card" data-time="30-60" data-ingredients="plums fruits">
+        <img src="https://cdn.lifehacker.ru/wp-content/uploads/2023/08/shutterstock_2157057863_1692646202.jpeg" alt="Компот из сливы">
+        <div class="recipe-card-content">
+          <h3>Компот из слив с корицей</h3>
+          <p class="recipe-time">⏱️ 45 минут</p>
+          <p class="recipe-ingredients">🫐 Сливы, Корица, Сахар, Вода</p>
+        <a href="recipes/compotes/plum-cinnamon-compote.html" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="recipe-card" data-time="15-30" data-ingredients="berries fruits">
+        <img src="https://avatars.mds.yandex.net/i?id=b212593f5c9079fee2120c52cd976744_l-5668769-images-thumbs&n=13" alt="Компот из ягод и апельсинов">
+        <div class="recipe-card-content">
+          <h3>Компот из ягод и апельсинов</h3>
+          <p class="recipe-time">⏱️ 20 минут</p>
+          <p class="recipe-ingredients">🍊 Апельсины, Клубника, Малина, Сахар</p>
+       <a href="recipes/compotes/berry-orange-compote.html" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="recipe-card" data-time="60+" data-ingredients="apples fruits">
+        <img src="https://avatars.mds.yandex.net/i?id=ac716e1854a05aefa8bf17cb50464b1df3fe8bea-5858325-images-thumbs&n=13" alt="Компот на зиму">
+        <div class="recipe-card-content">
+          <h3>Яблочный компот на зиму</h3>
+          <p class="recipe-time">⏱️ 90 минут</p>
+          <p class="recipe-ingredients">🍎 Яблоки, Сахар, Вода, Лимонная кислота</p>
+          <a href="recipes/compotes/apple-winter-compote.html" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="recipe-card" data-time="0-15" data-ingredients="berries">
+        <img src="https://cdn.lifehacker.ru/wp-content/uploads/2019/07/Depositphotos_199017292_xl-2015_1563437132-e1563437223547-2000x1000.jpg" alt="Быстрый малиновый компот">
+        <div class="recipe-card-content">
+          <h3>Быстрый малиновый компот</h3>
+          <p class="recipe-time">⏱️ 8 минут</p>
+          <p class="recipe-ingredients">🍓 Малина, Сахар, Вода</p>
+          <a href="recipes/compotes/raspberry-compote.html" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="recipe-card" data-time="15-30" data-ingredients="pears fruits">
+        <img src="https://avatars.mds.yandex.net/i?id=9f913ce151d630f6d53d449884dcdd02d64ea447-12644621-images-thumbs&n=13" alt="Компот из груш">
+        <div class="recipe-card-content">
+          <h3>Ароматный компот из груш</h3>
+          <p class="recipe-time">⏱️ 25 минут</p>
+          <p class="recipe-ingredients">🍐 Груши, Ваниль, Сахар, Вода</p>
+          <a href="recipes/compotes/pear-vanilla-compote.html" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="recipe-card" data-time="30-60" data-ingredients="berries fruits">
+        <img src="https://cdn.lifehacker.ru/wp-content/uploads/2019/07/Depositphotos_79653328_xl-2015_1563519000-e1563519061262-2000x1000.jpg" alt="Компот из вишни и яблок">
+        <div class="recipe-card-content">
+          <h3>Вишнёво-яблочный компот</h3>
+          <p class="recipe-time">⏱️ 40 минут</p>
+          <p class="recipe-ingredients">🍒 Вишня, 🍎 Яблоки, Сахар, Вода</p>
+          <a href="recipes/compotes/cherry-apple-compote.html" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="recipe-card" data-time="15-30" data-ingredients="plums fruits">
+        <img src="https://avatars.mds.yandex.net/i?id=299db6ce1c05eaea485c30502883c54cf7997992-5235603-images-thumbs&n=13" alt="Компот из жёлтых слив">
+        <div class="recipe-card-content">
+          <h3>Компот из жёлтых слив</h3>
+          <p class="recipe-time">⏱️ 22 минуты</p>
+          <p class="recipe-ingredients">🍑 Жёлтые сливы, Мёд, Вода</p>
+          <a href="recipes/compotes/yellow-plum-compote.html" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="recipe-card" data-time="0-15" data-ingredients="berries">
+        <img src="https://i.pinimg.com/originals/05/d0/6b/05d06b6c6e27861ebd5bc25e40553fdc.jpg" alt="Клюквенный компот">
+        <div class="recipe-card-content">
+          <h3>Клюквенный компот с мятой</h3>
+          <p class="recipe-time">⏱️ 12 минут</p>
+          <p class="recipe-ingredients">🫐 Клюква, Мята, Сахар, Вода</p>
+       <a href="recipes/compotes/cranberry-mint-compote.html" class="btn">Подробнее</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+    НАПИТКИ ДОМА — Сделано с ❤️ для любителей вкусных напитков
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
